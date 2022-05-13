@@ -160,47 +160,26 @@ button, a {
 }
 /* media queries */
 @media (max-width: 1400px) {
-  body {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
   .textarea {
     margin-right: 400px;
   }
 }
 @media (max-width: 1250px) {
-  body {
-    margin-left: 100px;
-    margin-right: 100px;
-  }
   .textarea {
     margin-right: 300px;
   }
 }
 @media (max-width: 1000px) {
-  body {
-    margin-left: 100px;
-    margin-right: 75px;
-  }
   .textarea {
     margin-right: 300px;
   }
 }
 @media (max-width: 760px) {
-  body {
-    margin-left: 75px;
-    margin-right: 75px;
-  }
   .textarea {
     margin-right: 250px;
   }
 }
 @media (max-width: 600px) {
-  body {
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-  }
   .textarea {
     margin-right: 200px;
   }
@@ -218,12 +197,6 @@ button, a {
   }
 }
 @media (max-width: 450px) {
-  body {
-    margin-left: 25px;
-    margin-right: 25px;
-    margin-bottom: 25px;
-    position: fixed;
-  }
   .textarea {
     margin-right: 25px;
   }
@@ -235,11 +208,6 @@ button, a {
   }
 }
 @media (max-width: 250px) {
-  body {
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: -25px;
-  }
   .textarea {
     margin-right: 25px;
   }
