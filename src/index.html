@@ -2,10 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Angular Quickstart</title>
+  <title>Hexagon</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    function home() {
+      window.location.href = "/"
+    }
+    function bot() {
+      windowFeatures = "popup,left=-1,top=-1,width=420,height=780"
+      window.open("https://discord.com/oauth2/authorize?client_id=845011004790407179&permissions=8&scope=bot%20applications.commands", "Hexagon", windowFeatures)
+    }
+    const button = document.querySelector(".init"),
+      toast = document.querySelector(".toast")
+      closeIcon = document.querySelector(".close"),
+      progress = document.querySelector(".progress");
+
+      let timer1, timer2;
+
+      button.addEventListener("click", () => {
+        toast.classList.add("active");
+        progress.classList.add("active");
+
+        timer1 = setTimeout(() => {
+            toast.classList.remove("active");
+        }, 3000);
+
+        timer2 = setTimeout(() => {
+          progress.classList.remove("active");
+        }, 3300);
+      });
+      
+      closeIcon.addEventListener("click", () => {
+        toast.classList.remove("active");
+        
+        setTimeout(() => {
+          progress.classList.remove("active");
+        }, 300);
+
+        clearTimeout(timer1);
+        clearTimeout(timer2);
+      });     
+  </script>
 </head>
 <body>
   <app-root></app-root>
