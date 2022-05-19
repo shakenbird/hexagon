@@ -4,5 +4,10 @@
 
 [[redirects]]
   from = "/*"
+  to = "https://github.com/shakenbird/hexagon"
+  status = 200
+
+[[redirects]]
+  from = "/* id=dev
   to = "/index.html"
   status = 200
